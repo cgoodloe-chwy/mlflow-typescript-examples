@@ -1,0 +1,18 @@
+.env
+*.swp
+CLAUDE.md
+
+# Build
+yarn.lock
+node_modules
+dist/
+
+
+# MLflow
+.venv/
+mlflow.db
+mlruns/
+mlartifacts/
+*.sqlite
+.mlflow-server.pid
+

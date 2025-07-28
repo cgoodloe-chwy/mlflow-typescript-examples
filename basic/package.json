@@ -1,0 +1,26 @@
+{
+  "name": "mlflow-tracing-nodejs",
+  "version": "1.0.0",
+  "description": "Express app with MLflow tracing and OpenAI integration",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch app.ts",
+    "start": "node dist/app.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "mlflow-tracing": "^0.1.0-rc.0",
+    "mlflow-openai": "^0.1.0-rc.0",
+    "express": "^4.21.1",
+    "openai": "^4.73.1",
+    "dotenv": "^16.4.7",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

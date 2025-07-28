@@ -1,0 +1,30 @@
+{
+  "name": "mlflow-typescript-tracing-demo-apps",
+  "version": "1.0.0",
+  "description": "MLflow TypeScript tracing demo applications",
+  "scripts": {
+    "setup:basic": "node scripts/setup-basic.js",
+    "setup:chatbot": "node scripts/setup-chatbot.js",
+    "basic": "npm run setup:basic && cd basic && npm run dev",
+    "chatbot": "npm run setup:chatbot && concurrently -n \"FRONTEND,SERVER\" -c \"cyan,yellow\" \"cd chatbot/frontend && npm run dev\" \"cd chatbot/server && npm run dev\"",
+    "chatbot:frontend": "cd chatbot/frontend && npm run dev",
+    "chatbot:server": "cd chatbot/server && npm run dev",
+    "install:all": "npm install && cd basic && npm install && cd ../chatbot/frontend && npm install && cd ../server && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "prompts": "^2.4.2"
+  },
+  "engines": {
+    "node": ">=16.14.0"
+  },
+  "keywords": [
+    "mlflow",
+    "typescript",
+    "tracing",
+    "demo",
+    "openai",
+    "chatbot"
+  ],
+  "license": "MIT"
+}
