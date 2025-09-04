@@ -15,4 +15,5 @@ mlruns/
 mlartifacts/
 *.sqlite
 .mlflow-server.pid
+.cursor
 
